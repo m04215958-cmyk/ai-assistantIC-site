@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>AI-AIC</title>
@@ -7,10 +7,51 @@
 </head>
 <body>
 
+<canvas id="matrix"></canvas>
+
+<div class="zoom-wrapper" id="zoomWrapper">
 <div class="container">
+<div class="box">
 <h1 class="title">AI-AIC</h1>
 <button id="getBtn">Get</button>
 </div>
+</div>
+
+<div class="plans" id="plans">
+<div class="plan free">
+<h2 class="plan-title">Free</h2>
+<p class="plan-sub">Free, limited AI</p>
+<ul>
+<li class="plus">+ Free :)</li>
+<li class="minus">- Not the full version</li>
+<li class="minus">- Infrequent updates</li>
+</ul>
+<button class="btn-free">Get</button>
+</div>
+
+<div class="divider"></div>
+
+<div class="plan paid" id="paidPlan">
+<canvas class="sparks"></canvas>
+<div class="paid-content">
+<h2 class="plan-title gold">Paid</h2>
+<ul>
+<li class="plus-gold">+ frequently updated</li>
+<li class="plus-gold">+ full AI version</li>
+<li class="plus-gold">+ more features</li>
+<li class="minus">- not free :(</li>
+</ul>
+<button class="btn-paid">Get</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="chat-screen" id="chatScreen">
+<div class="chat-messages" id="chatMessages"></div>
+</div>
+
+<div class="white-screen" id="whiteScreen"></div>
 
 <script src="script.js"></script>
 </body>
